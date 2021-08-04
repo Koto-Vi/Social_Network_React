@@ -1,12 +1,12 @@
 import React from 'react';
 import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.scss';
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = () => {
     return (
         <div>
-            <img src="https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__340.jpg" alt="Ooops"></img>
-            <div>Ava + Description</div>
+            <ProfileInfo />
             <MyPosts />
             
         </div>

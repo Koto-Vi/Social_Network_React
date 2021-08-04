@@ -11,9 +11,10 @@
   grid-template-columns: 2fr 10fr;
   grid-gap: 5px;
   position: relative;
-}
-
-.app-wrapper-content {
-  grid-area: c;
-  background-color: aqua;
+  
+  &-content {
+    grid-area: c;
+    background-color: aqua;
+  }
+  
 }
