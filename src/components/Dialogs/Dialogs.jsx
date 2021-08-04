@@ -14,41 +14,37 @@ const DialogItem = (props) => {
 
 const Message = (props) => {
     return (
-        <div className={s.message}>{props.message}</div>
+        <div className={s.message}>{props.item}</div>
     );
 }
 
 const Dialogs = (props) => {
 
-let dialogsData = [
-    { id: 1, name: "Artem"},
-    { id: 2, name: "Butuz"},
-    { id: 3, name: "Sanchez"},
-    { id: 4, name: "Seriy"},
-    { id: 5, name: "Egor"},
-    { id: 6, name: "Andrey"}
-];
+    let dialogsData = [
+        { id: 1, name: "Artem" },
+        { id: 2, name: "Butuz" },
+        { id: 3, name: "Sanchez" },
+        { id: 4, name: "Seriy" },
+        { id: 5, name: "Egor" },
+        { id: 6, name: "Andrey" }
+    ];
 
-let messagesData = [
-    { id: 1, message: 'Hi'},
-    { id: 2, message: 'How is your it-kamasutra?'},
-    { id: 3, message: 'Yo'},
-];
+    let messages = [
+        { id: 1, item: 'Hi' },
+        { id: 2, item: 'How is your it-kamasutra?' },
+        { id: 3, item: 'Yo' },
+    ];
+
+    let dialogElements = dialogsData.map( dialog => <DialogItem name={ dialog.name } id={ dialog.id } /> );
+    let messagesElements = messages.map( message => <Message item={message.item} /> );
 
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-                <DialogItem name={dialogsData[0].name} id={dialogsData[0].id} />
-                <DialogItem name={dialogsData[1].name} id={dialogsData[1].id} />
-                <DialogItem name={dialogsData[2].name} id={dialogsData[2].id} />
-                <DialogItem name={dialogsData[3].name} id={dialogsData[3].id} />
-                <DialogItem name={dialogsData[4].name} id={dialogsData[4].id} />
-                <DialogItem name={dialogsData[5].name} id={dialogsData[5].id} />
+                {dialogElements}
             </div>
             <div className={s.messages}>
-                <Message message={messagesData[0].message} />
-                <Message message={messagesData[1].message} />
-                <Message message={messagesData[2].message} />
+                {messagesElements}
             </div>
         </div>
 
