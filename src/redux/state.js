@@ -1,8 +1,8 @@
 let state = {
     profilePage: {
         posts: [
-            { id: 1, message: 'Hi, how are you?', likeCount: 15},
-            { id: 2, message: "It's my first post", likeCount: 20}
+            { id: 1, message: 'Hi, how are you?', likeCount: 15 },
+            { id: 2, message: "It's my first post", likeCount: 20 }
         ],
     },
     dialogsPage: {
@@ -19,8 +19,15 @@ let state = {
             { id: 2, item: 'How is your it-kamasutra?' },
             { id: 3, item: 'Yo' },
         ]
+    },
+    navBar: {
+        imgData: [
+            { adress: "https://davinci22.ru/wp-content/uploads/2014/01/default-avatar-m_1920.png", name: "Andrey" },
+            { adress: "https://davinci22.ru/wp-content/uploads/2014/01/default-avatar-m_1920.png", name: "Butuz" },
+            { adress: "https://davinci22.ru/wp-content/uploads/2014/01/default-avatar-m_1920.png", name: "Sanchez" }
+        ]
     }
-    
+
 }
 
 export default state;
