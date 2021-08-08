@@ -1,0 +1,17 @@
+.friends {
+    margin-top: 20px;
+    border-top: 2px solid #000;
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    &__img {
+        max-width: 50px;
+        border-radius: 50%;
+    }
+}
