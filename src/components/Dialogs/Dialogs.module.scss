@@ -1,10 +1,7 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
-    &Items {
-        
-        
-    }
+    
 
     .item {
         display: flex;
@@ -29,6 +26,5 @@
 
 .messages {
     padding: 10px;
-    .message {
-    }
+    
 }
