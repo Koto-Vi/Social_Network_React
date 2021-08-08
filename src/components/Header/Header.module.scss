@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     grid-area: h;
-    background-color: aqua;
     padding: 10px;
-}
-.header img {
-    max-width: 40px;
-    position: absolute;
+    border-bottom: 1px solid #000;
+    max-width: 100%;
+    img {
+        max-width: 40px;
+        position: absolute;
+    }
 }
 .title {
     margin: 0 auto;

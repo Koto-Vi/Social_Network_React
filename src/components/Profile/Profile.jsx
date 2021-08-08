@@ -5,9 +5,9 @@ import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = (props) => {
     return (
-        <div>
+        <div className={s.profile}>
             <ProfileInfo />
-            <MyPosts addPost={props.addPost} posts={props.posts} />
+            <MyPosts addPost={props.addPost} posts={props.posts}/>
             
         </div>
     );

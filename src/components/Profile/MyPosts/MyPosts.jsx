@@ -17,8 +17,8 @@ const MyPosts = (props) => {
     return (
         <div className={s.postsBlock}>
             My Posts
-            <div>
-                <div>
+            <div className={s.postsBlock__row}>
+                <div className={s.postsBlock__text}>
                     <textarea ref={newPostElement}></textarea>
                 </div>
                 <div className={s.postsBlock__btn}>
